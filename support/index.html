@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src data:; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<link rel="icon" href="data:,">
+<title>Snaplabel Support</title>
+<style>
+:root{--bg:#ffffff;--fg:#1d1d1f;--muted:#5f6368;--accent:#0a63c9;--line:#d9dce1;--card:#f5f6f8}
+@media (prefers-color-scheme:dark){:root{--bg:#121214;--fg:#ececf0;--muted:#a3a7ae;--accent:#6cb2ff;--line:#34363c;--card:#1d1e22}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;overflow-wrap:break-word}
+.wrap{max-width:46rem;margin:0 auto;padding:1.25rem 1.1rem 3rem}
+header.top{display:flex;flex-wrap:wrap;gap:.4rem 1rem;align-items:baseline;border-bottom:1px solid var(--line);padding-bottom:.75rem;margin-bottom:1.5rem}
+header.top .brand{font-weight:700;font-size:1.1rem;color:var(--fg);text-decoration:none;margin-right:auto}
+a{color:var(--accent)}
+a.plain{overflow-wrap:anywhere}
+h1{font-size:1.9rem;line-height:1.2;margin:.2rem 0 .6rem}
+h2{font-size:1.3rem;line-height:1.3;margin:2rem 0 .5rem}
+p,ul,ol{margin:.6rem 0}
+ul,ol{padding-left:1.35rem}
+li{margin:.3rem 0}
+.meta{color:var(--muted)}
+.table-wrap{overflow-x:auto;margin:.8rem 0}
+table{border-collapse:collapse;width:100%;min-width:16rem}
+th,td{text-align:left;vertical-align:top;padding:.5rem .6rem;border-bottom:1px solid var(--line)}
+th{background:var(--card)}
+footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);color:var(--muted);font-size:.92rem}
+footer a{margin-right:1rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+  <a class="brand" href="../">Snaplabel</a>
+  <nav><a href="../privacy/">Privacy</a> · <a href="../support/" aria-current="page">Support</a></nav>
+</header>
+<main>
+<h1>Snaplabel Support</h1>
+
+<p>Snaplabel prints labels on Bluetooth thermal label printers from your iPhone. Printing is always free, with no account and no subscription. This page answers common questions. If you still need help, email us at <strong><a class="plain" href="mailto:snaplabel.support@gmail.com">snaplabel.support@gmail.com</a></strong>.</p>
+
+<h2 id="printers">Which printers work?</h2>
+
+
+<div class="table-wrap">
+<table>
+  <thead><tr><th scope="col">Printer</th><th scope="col">Status in Snaplabel</th></tr></thead>
+  <tbody>
+    <tr><td>Niimbot D110</td><td><strong>Beta</strong></td></tr>
+    <tr><td>Niimbot B1</td><td><strong>Beta</strong></td></tr>
+    <tr><td>Phomemo T02</td><td><strong>Beta</strong></td></tr>
+    <tr><td>Phomemo M110 and other models</td><td>Not supported yet</td></tr>
+  </tbody>
+</table>
+</div>
+
+<ul>
+  <li><strong>Tested</strong> means we tested that model on a real printer. Results can still vary with hardware revision, firmware and paper.</li>
+  <li><strong>Beta</strong> means Snaplabel's support for that model is based on open-source protocol work and <strong>has not yet been tested by us on a real printer</strong>. It can print, but alignment, darkness or other details may be off on some printers or firmware versions. Please print one label first and check it.</li>
+  <li><strong>Not supported yet</strong> means printing to that model is turned off. You can still design labels and use the Demo Printer. In the app, go to Settings &gt; Supported Printers and tap <strong>Request</strong> to ask for a model.</li>
+  <li>Not supported: printers that only use "classic" Bluetooth (some older units can't connect to iPhone apps over Bluetooth Low Energy), 4×6 shipping-label printers, and Phomemo M02X.</li>
+  <li>The current list is always in the app under <strong>Settings &gt; Supported Printers</strong>.</li>
+</ul>
+<p>Snaplabel is not affiliated with NIIMBOT or Phomemo. Brand names are used only to identify compatible printers.</p>
+
+<h2 id="beta-report">How do I report how a Beta printer worked?</h2>
+<p>After each print on a Beta printer, Snaplabel shows <strong>"Beta printer — how did it print?"</strong></p>
+<ul>
+  <li>Tap <strong>Report a Problem</strong> if something went wrong, or <strong>It Printed Fine</strong> if it worked.</li>
+  <li>The app prepares a short report (app and iOS version, iPhone model, printer model, paper size, last result). You can read all of it before sending. A label preview image is only attached if you turn it on.</li>
+  <li>Tapping Send opens your Mail app. Nothing is sent until you send the email yourself.</li>
+  <li>No Mail account on your iPhone? Use <strong>Copy Report</strong> or <strong>Export Report</strong> and paste it into any email to <a class="plain" href="mailto:snaplabel.support@gmail.com">snaplabel.support@gmail.com</a>.</li>
+</ul>
+<p>Reports about Beta printers are the fastest way for us to improve them. Photos of the printed label next to a ruler help a lot.</p>
+
+<h2 id="connect">I can't find or connect to my printer</h2>
+<ol>
+  <li><strong>Turn the printer on</strong> and make sure it's charged.</li>
+  <li><strong>Close the official printer app</strong> (or disconnect the printer in it). Most printers accept only one Bluetooth connection at a time. If Snaplabel says <em>"Printer may be connected to another app"</em>, this is usually why.</li>
+  <li><strong>Keep the printer close</strong> to your iPhone.</li>
+  <li><strong>Check Bluetooth access:</strong> iOS Settings &gt; Snaplabel &gt; Bluetooth must be on. If you turned it off, Snaplabel shows <em>"Bluetooth access is off"</em> with a button to open Settings.</li>
+  <li><strong>Check that your model is supported</strong> (see the table above). Snaplabel only lists printers it recognizes.</li>
+  <li>If it still doesn't appear, turn the printer off and on again, then reopen the printer list.</li>
+  <li>Still stuck? In the app, go to Settings &gt; <strong>Report a Print Problem</strong> and send us the report.</li>
+</ol>
+<p>You don't need to pair the printer in iOS Settings &gt; Bluetooth. Snaplabel finds and connects to the printer from inside the app.</p>
+
+<h2 id="print-quality">The print is shifted, cut off, too light or too dark</h2>
+<ul>
+  <li><strong>Check the paper size.</strong> Tap the size in the editor title (for example "40 × 30 mm") and choose the paper that is actually loaded. If the label and the paper don't match, Snaplabel warns you before printing.</li>
+  <li><strong>Keep content inside the printable area.</strong> Items outside it are outlined in red, and the print preview warns you. Some printers have a print head narrower than the paper.</li>
+  <li><strong>The preview shows exactly what is sent</strong> to the printer as black-and-white dots. If the preview looks right but the paper doesn't, please report it with a photo.</li>
+  <li><strong>Density:</strong> where the printer model supports it, choose a density in the print sheet. Some models offer only the default density in Snaplabel for now.</li>
+  <li><strong>Large black areas</strong> (white-on-black text, thick borders, dark photos) may print unevenly and use more battery. Snaplabel shows a reminder but never blocks printing.</li>
+  <li><strong>Small text</strong> may be hard to read on thermal paper. Snaplabel warns when text is very small.</li>
+  <li><strong>Photos:</strong> try switching between <em>Dither</em> and <em>Threshold</em> and adjust <em>Brightness</em>.</li>
+</ul>
+<p>If the result is clearly wrong on a Beta printer, please use <strong>Report a Problem</strong>. It helps us fix that model.</p>
+
+<h2 id="completion-unknown">A print stopped or says "Completion unknown"</h2>
+<p>Snaplabel never reprints automatically, because a printer may still finish data it already received. If you see <em>"Completion unknown — check printer before reprinting"</em> or <em>"Sent — check printer"</em>, look at the printer and the paper first, then print again only if you need to. <em>"Sent — check printer"</em> means the data was delivered to the printer, not that the label is guaranteed to be on paper.</p>
+
+<h2 id="free">Is printing really free?</h2>
+<p>Yes. Printing is free and unlimited, with no watermark and no daily limit, including labels made with Pro templates, icons or effects, even after a refund. <strong>Snaplabel Pro</strong> is an optional one-time purchase that unlocks extra creative tools (more templates and fonts, more icons and borders, auto numbering, white-on-black and vertical text, photo background removal) and automation (CSV batch printing, Home Screen widgets, Siri and Shortcuts). There is no subscription.</p>
+
+<h2 id="restore">Restore Purchases</h2>
+<p>If you bought Pro before (on this iPhone or another device using the same Apple Account):</p>
+<ol>
+  <li>Make sure you're connected to the internet and signed in to the App Store with the Apple Account you used to buy Pro.</li>
+  <li>In Snaplabel, go to <strong>Settings &gt; Restore Purchases</strong>.</li>
+</ol>
+<p>Pro keeps working offline once it's on your iPhone. If Family Sharing is available for Pro and the buyer has turned on purchase sharing, family members can use Restore Purchases too. If Restore says <em>"No previous purchase found"</em>, check that you're using the right Apple Account.</p>
+
+<h2 id="refunds">Refunds</h2>
+<p>Purchases are made through Apple, so refunds are handled by Apple, not by us. You can request one at <strong>reportaproblem.apple.com</strong> or from your purchase history in the App Store. If Pro is refunded, Pro tools lock again, but every label you already made stays editable and printable for free.</p>
+
+<h2 id="background-removal">Background removal doesn't work</h2>
+<p>Background removal runs on your iPhone using Apple's Vision framework and needs iOS 17 or later. It may not be available on every device. If it isn't, Snaplabel shows <em>"Background removal isn't available on this device."</em> It works best on photos with a clear subject.</p>
+
+<h2 id="privacy">Privacy</h2>
+<p>Snaplabel has no account, no ads, no analytics and no tracking. Your labels stay on your iPhone (and in your own iPhone backups). Bluetooth is used only to connect to your printer. Read the full policy: <a class="plain" href="https://ilikebug.github.io/snaplabel-site/privacy/">https://ilikebug.github.io/snaplabel-site/privacy/</a></p>
+
+<h2 id="contact">Contact</h2>
+<p>Email: <strong><a class="plain" href="mailto:snaplabel.support@gmail.com">snaplabel.support@gmail.com</a></strong></p>
+<p>Please include your iPhone model, iOS version, printer model and what you saw. The in-app report (Settings &gt; Report a Print Problem) fills this in for you.</p>
+<p>Snaplabel is made by Sylvan Zhang.</p>
+</main>
+<footer>
+  <a href="../">Snaplabel</a><a href="../privacy/">Privacy Policy</a><a href="../support/">Support</a>
+</footer>
+</div>
+</body>
+</html>
